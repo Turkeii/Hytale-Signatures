@@ -49,7 +49,6 @@
 
 "GameInstance::Constructor", "41 57 41 56 41 55 41 54 57 56 55 53 48 81 EC ? ? ? ? 0F 29 B4 24 ? ? ? ? 0F 29 BC 24 ? ? ? ? 33 C0 48 89 44 24 ? 0F 57 E4 0F 29 64 24 ? 0F 29 64 24"
 "GameInstance::TickAllModules", "E8 ? ? ? ? F3 0F 10 83 ? ? ? ? F3 0F 5C C6", 0x1
-"GameInstance::Chat", "48 8D 4B ? 48 8B D6 E8 ? ? ? ? 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B F0 48 8D 4E ? 48 8B D3 E8 ? ? ? ? 48 8D 4B ? 48 8B D6 E8 ? ? ? ? 48 8D 0D", 0x3
 "GameInstance::IsPlaying", "E8 ? ? ? ? 85 C0 74 ? 8B 53 ? 83 FA", 0x1
 "GameInstance::IsBuilderModeEnabled", "E8 ? ? ? ? 85 C0 75 ? 4C 8B 4B ? 41 80 B9", 0x1
 "GameInstance::InitRenderingOptions", "E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 48 8B 5B", 0x1
