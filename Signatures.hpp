@@ -41,7 +41,6 @@
 "DefaultMovementController::getWishDirection", "F2 0F 10 81 ? ? ? ? 80 B9"
 "DefaultMovementController::DoTick", "41 57 41 56 41 55 41 54 57 56 55 53 48 81 EC ? ? ? ? 0F 29 B4 24 ? ? ? ? 0F 29 BC 24 ? ? ? ? 44 0F 29 84 24 ? ? ? ? 44 0F 29 8C 24 ? ? ? ? 44 0F 29 94 24 ? ? ? ? 0F 57 E4 48 B8"
 
-
 "EntityStoreModule::GatherLights", "41 57 41 56 41 55 41 54 57 56 55 53 48 83 EC ? 33 C0 48 89 44 24 ? 48 8B D9 48 8B F2 41 8B F8 48 8B AC 24"
 
 "Engine::Constructor", "E8 ? ? ? ? 48 8D 4B ? 48 8B D7 E8 ? ? ? ? 48 8B 4B ? 48 8B 49 ? E8", 0x1
