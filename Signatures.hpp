@@ -39,6 +39,8 @@
 "DefaultMovementController::RequestVelocityChange", "E8 ? ? ? ? C7 46 ? ? ? ? ? 48 8B 43", 0x1
 "DefaultMovementController::VelocityChange", "57 56 55 53 48 83 EC ? 0F 29 74 24 ? F3 0F 11 4C 24 ? F3 0F 11 54 24 ? F3 0F 11 5C 24 ? 48 8B D9 48 8B 4B"
 "DefaultMovementController::getWishDirection", "F2 0F 10 81 ? ? ? ? 80 B9"
+"DefaultMovementController::DoTick", "41 57 41 56 41 55 41 54 57 56 55 53 48 81 EC ? ? ? ? 0F 29 B4 24 ? ? ? ? 0F 29 BC 24 ? ? ? ? 44 0F 29 84 24 ? ? ? ? 44 0F 29 8C 24 ? ? ? ? 44 0F 29 94 24 ? ? ? ? 0F 57 E4 48 B8"
+
 
 "EntityStoreModule::GatherLights", "41 57 41 56 41 55 41 54 57 56 55 53 48 83 EC ? 33 C0 48 89 44 24 ? 48 8B D9 48 8B F2 41 8B F8 48 8B AC 24"
 
@@ -104,6 +106,8 @@
 "Interface::FadeIn", "57 56 55 53 48 83 EC ? 48 8B D9 48 8B F2 41 8B F8 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B E8 48 8D 4D ? 48 8B D3 E8 ? ? ? ? 48 8D 4D"
 "Interface::PrepareForDraw", "55 57 56 53 48 81 EC ? ? ? ? 48 8D AC 24 ? ? ? ? 48 8B D9 80 7B"
 
+"InGameView::OnStatChanged", "56 53 48 83 EC ? 4C 89 4C 24 ? 48 8B D9"
+
 "MethodTable::FormattedMessage", "48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8D 0D ? ? ? ? 48 89 48 ? 48 8D 0D ? ? ? ? 48 89 48 ? 48 8B CB 48 8B D0 E8", 0x3
 "MethodTable::Byte", "48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B F8 85 F6 7E ? 8B D3", 0x3
 "MethodTable::App", "48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B D8 48 8B CB E8 ? ? ? ? 48 89 5D ? 48 8D 05 ? ? ? ? 48 83 78 ? ? 75", 0x3
@@ -149,6 +153,16 @@
 "Static::OptionsHelper", "48 8B 35 ? ? ? ? 48 8B 56 ? 48 85 D2 75 ? 48 8B 4B", 0x3
 "Static::BuildInfo", "48 8B 1D ? ? ? ? 48 8B 73 ? 48 8B 4B", 0x3
 "Static::IsOnMainThread", "E8 ? ? ? ? 85 C0 0F 84 ? ? ? ? 48 8D 05 ? ? ? ? 48 83 78 ? ? 0F 85 ? ? ? ? 48 8B 0D ? ? ? ? 48 8B 49 ? 48 8B 57", 0x1
+
+"StaminaPanelComponent::OnEffectAdded", "57 56 53 48 83 EC ? 48 8B D9 8B F2 48 8B 8B ? ? ? ? 48 8B 89 ? ? ? ? 48 8B 49 ? 48 8B 89 ? ? ? ? 48 8B B9 ? ? ? ? 40 38 3F 48 8B CF 48 8D 15 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 8B 08 3B F1 74 ? 48 8B CF 48 8D 15 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 8B 08 3B F1 75 ? C6 83 ? ? ? ? ? 48 8B 93"
+"StaminaPanelComponent::AnimateFlashBar", "53 48 83 EC ? 0F 57 E4 0F 29 64 24 ? 33 C0 48 89 44 24 ? F3 0F 11 8C 24"
+"StaminaPanelComponent::GetAnimationSpeed", "53 48 83 EC ? 48 8B D9 48 8B CB E8 ? ? ? ? FF C8 83 F8 ? 77 ? 8B C0"
+"StaminaPanelComponent::UpdateProgressBarValues", "53 48 83 EC ? 0F 29 74 24 ? 0F 57 E4 0F 11 64 24 ? 33 C0 48 89 44 24 ? 48 8B D9 F3 0F 10 83"
+"StaminaPanelComponent::OnStatChanged", "57 56 53 48 83 EC ? 0F 29 74 24 ? 0F 57 E4 0F 11 64 24 ? 33 C0 48 89 44 24 ? 4C 89 84 24"
+"StaminaPanelComponent::UpdateStaminaPanelVisibility", "48 83 EC ? 0F 57 E4 0F 29 64 24 ? 33 C0 48 89 44 24 ? F3 0F 10 42"
+"StaminaPanelComponent::UpdateStaminaDebugInfo", "57 56 53 48 83 EC ? 0F 57 E4 0F 11 64 24 ? 33 C0 48 89 44 24 ? 48 8B D9 48 8B 8B ? ? ? ? 48 8B 89 ? ? ? ? 48 8B 49 ? 48 8B 49 ? 48 8B 89 ? ? ? ? 80 B9"
+"StaminaPanelComponent::OnEffectRemoved", "57 56 53 48 83 EC ? 48 8B D9 8B F2 48 8B 8B ? ? ? ? 48 8B 89 ? ? ? ? 48 8B 49 ? 48 8B 89 ? ? ? ? 48 8B B9 ? ? ? ? 40 38 3F 48 8B CF 48 8D 15 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 8B 08 3B F1 74 ? 48 8B CF 48 8D 15 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 8B 08 3B F1 75 ? C6 83 ? ? ? ? ? 48 83 C4"
+"StaminaPanelComponent::SetDepletion", "56 53 48 83 EC ? 48 8B D9 8B F2 8B 8B"
 
 "System::List::Add", "57 56 55 53 48 83 EC ? 48 8B D9 48 8B F2 8B 7B ? 8D 6F ? 8B CD 48 8B 53 ? 83 7A ? ? 75 ? B8 ? ? ? ? EB ? 8B 42 ? 03 C0 8B D0 B8 ? ? ? ? 81 FA ? ? ? ? 0F 47 D0 3B D1 0F 4C D1 48 8B CB E8 ? ? ? ? 89 6B ? 48 8B 4B ? 48 63 D7"
 
